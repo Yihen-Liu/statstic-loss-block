@@ -21,6 +21,8 @@ darwin-amd64:
 windows-amd64:
 	CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o ./bin/go-trias-cache-windows-amd64 $(GOFLAGS) .
 
+test:
+	go test -v ./...
 clean:
 	rm -f bin/go-cache-*
 	rm -fr ./bin/logs/*.log

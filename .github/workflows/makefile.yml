@@ -16,3 +16,7 @@ jobs:
 
     - name: Build
       run: make linux-amd64
+
+    - name: Testing
+      run: make test
+
